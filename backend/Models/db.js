@@ -3,8 +3,8 @@ const mongoose = require('mongoose');
 const DB_URL = process.env.DB_URL;
 
 mongoose.connect(DB_URL)
-.then(()=>{
+.then(() => {
     console.log('MongoDB is Connected...!!');
-}).catch((err) =>{
+}).catch((err) => {
     console.log('MongoDB is note Connected..!!',err);
 })
