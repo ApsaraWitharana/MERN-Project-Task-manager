@@ -8,3 +8,4 @@ mongoose.connect(DB_URL)
 }).catch((err) => {
     console.log('MongoDB is note Connected..!!',err);
 })
+

@@ -7,12 +7,12 @@ const TaskSchema = new Schema({
         required:true
        
 
+
     },
     isDone: {
         type:Boolean,
         required:true
     }
 });
-
 const TaskModel = mongoose.model('todos',TaskSchema);
 module.exports = TaskModel;
