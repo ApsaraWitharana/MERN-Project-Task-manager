@@ -1,6 +1,6 @@
-# MEAN Stack Task Manager
+# MERN Stack Task Manager
 
-This is a **Task Manager** web application built using the **MEAN stack** (MongoDB, Express.js, Angular, Node.js). The application allows users to create, update, delete, and manage tasks efficiently.
+This is a **Task Manager** web application built using the **MERN stack** (MongoDB, Express.js, React, Node.js). The application allows users to create, update, delete, and manage tasks efficiently.
 
 ## Features
 
@@ -14,7 +14,6 @@ This is a **Task Manager** web application built using the **MEAN stack** (Mongo
 
 - **MongoDB**: NoSQL database for storing user and task data.
 - **Express.js**: Web framework for Node.js to handle server-side logic.
-- **Angular**: Frontend framework for building a dynamic and responsive UI.
 - **Node.js**: JavaScript runtime environment for server-side development.
 - **React**: React is used in certain components for better reactivity and reusable UI components.
 
