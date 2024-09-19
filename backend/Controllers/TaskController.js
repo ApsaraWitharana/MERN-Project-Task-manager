@@ -31,7 +31,7 @@ const updateTaskById = async(req,res) => {
         const obj = {$set: {...body }};
      await TaskModel.findByIdAndUpdate(id, obj)
      res.status(200)
-      .json({message:'All Tack Updated', success : true, data });
+      .json({message:'All Tack Updated', success : true });
     }catch (err){
         res.status(500).json({message:'Failed to update task',success : false });
     }
@@ -41,9 +41,9 @@ const updateTaskById = async(req,res) => {
 const deleteTaskById = async(req,res) => {
     try{
      const id = req.params.id;
-     await TaskModel.deleteTaskById(id);
+     await TaskModel.findByIdAndDelete(id);
      res.status(200)
-      .json({message:'All Tack Delete', success : true, data });
+      .json({message:'All Tack Delete', success : true });
     }catch (err){
         res.status(500).json({message:'Failed to create task',success : false });
     }
