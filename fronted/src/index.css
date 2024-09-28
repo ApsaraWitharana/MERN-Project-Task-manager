@@ -1,3 +1,4 @@
+/* Apply background image to the whole page */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +6,71 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("/image/mypic1.jpeg");
+  /* Background image */
+  background-size: cover;
+  /* Make the image cover the entire background */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Prevent the image from repeating */
+  border: 2px solid black;
+  /* Correct border style */
+  border-radius: 2px;
+  /* Rounded corners */
+}
+
+.mb-4{
+  color: wheat;
+}
+/* Apply the same border radius to all elements */
+* {
+  border-radius: 2px;
+  /* Rounded corners for all elements */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Add hover animation to all buttons */
+button {
+  background-color: lightblue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: blue;
+  /* Change background color on hover */
+  transform: scale(1.1);
+  /* Scale up on hover */
+}
+
+/* Add hover effect to elements with class 'mb-4' */
+.mb-4 {
+  color: wheat;
+  transition: all 0.3s ease;
+  /* Smooth transition on hover */
+}
+
+.mb-4:hover {
+  color: lightgreen;
+  /* Change text color on hover */
+  transform: scale(1.1);
+  /* Slightly enlarge the element */
+}
+
+/* Apply the same border radius to all elements */
+* {
+  border-radius: 2px;
+  /* Rounded corners for all elements */
+  transition: all 0.3s ease-in-out;
+  /* Smooth transition for hover effects */
 }
 
 code {
