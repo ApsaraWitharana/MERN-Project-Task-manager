@@ -4,6 +4,7 @@ import { ToastContainer } from 'react-toastify';
 import { CreateTask, DeleteTaskById, GetAllTasks, UpdateTaskById } from './api';
 import { notify } from './utils';
 
+
 function TaskManager() {
     const [input, setInput] = useState('');
     const [tasks, setTasks] = useState([]); // tasks initialized as an empty array
